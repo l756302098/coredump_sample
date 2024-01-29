@@ -7,8 +7,7 @@ echo ‘/var/log/%e.core.%p’ > /proc/sys/kernel/core_pattern
 ```
 or  
 ```
-std::string cmd = "sysctl -w kernel.core_pattern=/home/li/log/%e.core.%p.
-%t";
+std::string cmd = "sysctl -w kernel.core_pattern=/home/li/log/%e.core.%p.%t";
 system(cmd.c_str());
 ```   
 
